@@ -1,0 +1,102 @@
+.taust {
+    background-color: #232323;
+    background-size: cover;
+}
+
+.divbody {
+    height: 100%;
+    width: 1000px;
+    background-color: black;
+    box-shadow: 10px 0px 30px rgba(0, 0, 0, 0.2), -10px 0px 30px rgba(0, 0, 0, 0.2);
+    position: sticky;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.header {
+    height: 320px;
+    width: 100%;
+    background-color: black;
+    background-image: url(https://freedomshammer.files.wordpress.com/2015/06/vampire-shoulc-steve-buscemi.jpg);
+    /* ALTERNATIIVSED PILDID:
+        * https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Steve_Buscemi_at_the_2009_Tribeca_Film_Festival.jpg/1200px-Steve_Buscemi_at_the_2009_Tribeca_Film_Festival.jpg (veits õõvastav, hele taust)
+        * https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Steve_Buscemi_2009_portrait.jpg/1200px-Steve_Buscemi_2009_portrait.jpg (veits õõvastav, valge taust)
+        * http://cdn29.us1.fansshare.com/images/stevebuscemi/creepiest-steve-buscemi-eyes-943120973.jpg (suht viisakas, valge taust)
+        * https://lovelace-media.imgix.net/getty/487346029.jpg (suht viisakas, tume taust)
+        * https://freedomshammer.files.wordpress.com/2015/06/vampire-shoulc-steve-buscemi.jpg (suht viisakas, must taust)
+    */
+    background-size: cover;
+    background-position: 100px -210px;
+    background-repeat: no-repeat;
+    background-size: 90%;
+}
+
+.menubar {
+    background-color: black;
+    height: 51px;
+    width: 100%;
+    border-width: 2px 0px;
+    border-style: solid;
+    border-color: springgreen;
+}
+
+.menubar table {
+    margin: auto;
+}
+
+.menubar td {
+    width: 140px;
+    height: 30px;
+    color: white;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+    padding: 0px 10px 0px 10px;
+    transform: translateY(8px);
+}
+
+.menubar td:hover {
+    background-color: white;
+    color: black;
+}
+
+.tekstiosa {
+    padding: 60px;
+    font-family: monospace;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.tekstiosa h1 {
+    padding: 10px 0px 20px 0px;
+    font-family: sans-serif;
+    letter-spacing: 6px;
+    word-spacing: 12px;
+    font-size: 36px;
+}
+
+.tekstiosa p {
+    padding: 10px 30px;
+    font-size: 14px;
+    text-align: justify;
+    line-height: 20px;
+}
+
+hr {
+    border: 2px solid springgreen;
+    width: 60px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.menubar td:hover a {
+    color: black;
+}
