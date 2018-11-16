@@ -1,3 +1,25 @@
+﻿div.gallery {
+    margin: auto;
+    border: 10px solid springgreen;
+    float: middle;
+    width: 700px;
+
+}
+
+
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+
 .taust {
     background-color: #232323;
     background-size: cover;
