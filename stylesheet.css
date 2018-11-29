@@ -7,7 +7,6 @@
 }
 
 
-
 div.gallery img {
     width: 100%;
     height: auto;
@@ -18,7 +17,7 @@ div.desc {
     text-align: center;
 }
 
-
+/* ÜLDINE */
 
 .taust {
     background-color: #232323;
@@ -38,12 +37,15 @@ div.desc {
     margin: auto;
 }
 
+
+/* HEADER ja MENUD */
+
 .header {
     height: 320px;
     width: 100%;
     background-color: black;
     background-image: url(https://freedomshammer.files.wordpress.com/2015/06/vampire-shoulc-steve-buscemi.jpg);
-    /* ALTERNATIIVSED PILDID:
+    /* ALTERNATIIVSED PILDID (allikad):
         * https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Steve_Buscemi_at_the_2009_Tribeca_Film_Festival.jpg/1200px-Steve_Buscemi_at_the_2009_Tribeca_Film_Festival.jpg (veits õõvastav, hele taust)
         * https://upload.wikimedia.org/wikipedia/commons/thumb/9/90/Steve_Buscemi_2009_portrait.jpg/1200px-Steve_Buscemi_2009_portrait.jpg (veits õõvastav, valge taust)
         * http://cdn29.us1.fansshare.com/images/stevebuscemi/creepiest-steve-buscemi-eyes-943120973.jpg (suht viisakas, valge taust)
@@ -85,6 +87,18 @@ div.desc {
     color: black;
 }
 
+td a {
+    color: white;
+    text-decoration: none;
+}
+
+.menubar td:hover a {
+    color: black;
+}
+
+
+/* TEKSTIOSA */
+
 .tekstiosa {
     padding: 60px;
     font-family: monospace;
@@ -107,6 +121,11 @@ div.desc {
     line-height: 20px;
 }
 
+.tekstiosa iframe {
+    padding: 30px;
+}
+
+
 hr {
     border: 2px solid springgreen;
     width: 60px;
@@ -115,10 +134,80 @@ hr {
 }
 
 a {
-    color: white;
-    text-decoration: none;
+    color: springgreen;
 }
 
-.menubar td:hover a {
-    color: black;
+
+/* FILMOGRAAFIA LEHT */
+
+.posters {
+    padding: 30px;
+    width: 820px;
+    height: 580px;
+    overflow: hidden;
+}
+
+.row {
+    width: 400px;
+    float: left;
+}
+
+.column {
+    float: left;
+    width: 33.33%;
+    padding-bottom: 30px;
+}
+
+.column img {
+    opacity: 0.8; 
+    cursor: pointer;
+    height: 155px;
+}
+
+.column img:hover {
+    opacity: 1;
+    box-shadow: 0px 0px 0px 6px springgreen;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container {
+    position: relative;
+    display: none;
+    float: right;
+    width: 390px;
+    
+}
+
+#imgtext {
+    opacity: 0;
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: whitesmoke;
+    font-size: 13px;
+    background: black;
+    border: 2px solid springgreen;
+    padding: 10px;
+}
+
+.container:hover #imgtext {
+    opacity: 1;
+}
+
+.closebtn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+.closebtn:hover {
+    color: springgreen;
 }
